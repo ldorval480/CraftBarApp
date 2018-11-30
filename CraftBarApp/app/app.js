@@ -1,14 +1,26 @@
 'use strict';
 
 // Declare app level module which depends on views, and core components
-angular.module('myApp', [
+angular.module('craftBar', [
   'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
-  'myApp.version'
+  'craftBar.home',
+  'craftBar.view2',
+  'craftBar.services.styleService',
+  'craftBar.services.beerService'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
 
-  $routeProvider.otherwise({redirectTo: '/view1'});
+
+  $routeProvider
+    .when('/home', {
+      templateUrl: 'view1/view1.html',
+      controller: 'homeCtrl'
+    })
+    .when('/view2', {
+      templateUrl: 'view2/view2.html',
+      controller: 'View2Ctrl'
+    })
+    .otherwise({redirectTo: '/home'});
 }]);
+

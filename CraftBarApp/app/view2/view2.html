@@ -1,5 +1,18 @@
-<p>This is the partial for view 2.</p>
-<p>
-  Showing of 'interpolate' filter:
-  {{ 'Current version is v%VERSION%.' | interpolate }}
-</p>
+
+<p>This is the partial for view 2. {{hello}}</p>
+
+  <div class="sidebar">
+    <ul>
+      <a ng-click="currentStyleCategory = null" ng-class="{'active':isSelectedStyle(null)}">All</a>
+      <li ng-repeat="style in styles">
+        <a ng-click="setCurrentStyleCategory(style)" ng-class="{'active':isSelectedStyle(style)}">{{style.name}}</a>
+      </li>
+    </ul>
+  </div>
+  <div class="main">
+    <ul>
+      <li ng-repeat="beer in beers | filter:{style:currentStyleCategory.name}">
+        <p>{{beer.name}}</p>
+      </li>
+    </ul>
+  </div>

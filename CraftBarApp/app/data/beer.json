@@ -1,0 +1,11 @@
+[
+  {"id":0, "name": "AngularJS", "brewery": "", "style": "Lager", "price": "Development" },
+  {"id":1, "name": "Egghead.io", "brewery": "", "style": "IPA", "price": "Development" },
+  {"id":2, "name": "A List Apart", "brewery": "", "style": "Pilsner", "price": "Design" },
+  {"id":3, "name": "One Page Love", "brewery": "", "style": "Blonde", "price": "Design" },
+  {"id":4, "name": "MobilityWOD", "brewery": "", "style": "Wheat", "price": "Exercise" },
+  {"id":5, "name": "Robb Wolf", "brewery": "", "style": "Hefeweizen", "price": "Exercise" },
+  {"id":6, "name": "Senor Gif", "brewery": "", "style": "Pilsner", "price": "Humor" },
+  {"id":7, "name": "Wimp", "brewery": "", "style": "IPA", "price": "Humor" },
+  {"id":8, "name": "Dump", "brewery": "", "style": "IPA", "price": "Humor" }
+]

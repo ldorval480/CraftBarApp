@@ -1,2 +1,0 @@
-# CraftBarApp
-CraftBarApp

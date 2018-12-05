@@ -1,0 +1,18 @@
+
+<p>This is the partial for view 2. {{hello}}</p>
+
+  <div class="sidebar">
+    <ul>
+      <a ng-click="currentStyleCategory = null" ng-class="{'active':isSelectedStyle(null)}">All</a>
+      <li ng-repeat="style in styles">
+        <a ng-click="setCurrentStyleCategory(style)" ng-class="{'active':isSelectedStyle(style)}">{{style.Name}}</a>
+      </li>
+    </ul>
+  </div>
+  <div class="main">
+    <ul>
+      <li ng-repeat="beer in beers | filter:{Style:currentStyleCategory.Name}">
+        <p>{{beer.Name}}</p>
+      </li>
+    </ul>
+  </div>

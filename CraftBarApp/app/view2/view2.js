@@ -8,10 +8,12 @@ angular.module('craftBar.view2', [])
     $scope.currentStyleCategory = null;
 
     styleService.getStyles().then(function(response){
+      console.log(response.data)
       $scope.styles = response.data;
     });
 
     beerService.getBeers().then(function(response){
+      //console.log(response.data)
       $scope.beers = response.data;
     });
 
@@ -27,6 +29,6 @@ angular.module('craftBar.view2', [])
         return false;
     };
 
-    console.log($scope.currentStyleCategory)
+    //console.log($scope.style)
 
 }]);

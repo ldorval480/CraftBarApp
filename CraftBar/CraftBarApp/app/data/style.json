@@ -1,0 +1,8 @@
+[
+  {"id": 0, "name": "Lager"},
+  {"id": 1, "name": "IPA"},
+  {"id": 2, "name": "Pilsner"},
+  {"id": 3, "name": "Blonde"},
+  {"id": 4, "name": "Wheat"},
+  {"id": 5, "name": "Hefeweizen"}
+]
